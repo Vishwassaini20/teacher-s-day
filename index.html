@@ -7,23 +7,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1 class="title">🎉 Happy Teachers' Day 🎉</h1>
+  <div class="chalkboard">
+    <h1 class="chalk-title">🎉 Happy Teachers' Day 🎉</h1>
     
-    <div class="balloon-container">
-      <div class="balloon" onclick="popBalloon(this)">🎈</div>
-      <div class="balloon" onclick="popBalloon(this)">🎈</div>
-      <div class="balloon" onclick="popBalloon(this)">🎈</div>
-      <div class="balloon" onclick="popBalloon(this)">🎈</div>
-      <div class="balloon" onclick="popBalloon(this)">🎈</div>
-      <div class="balloon" onclick="popBalloon(this)">🎈</div>
-      <div class="balloon" onclick="popBalloon(this)">🎈</div>
-      <div class="balloon" onclick="popBalloon(this)">🎈</div>
+    <!-- Balloons -->
+    <div class="balloons">
+      <div class="balloon" data-message="A teacher’s wisdom lights the way..."></div>
+      <div class="balloon" data-message="Guiding us brighter day by day..."></div>
+      <div class="balloon" data-message="With patience deep and knowledge true..."></div>
+      <div class="balloon" data-message="They shape the dreams we dare to pursue."></div>
+      <div class="balloon" data-message="They plant the seeds of hope and cheer..."></div>
+      <div class="balloon" data-message="And lift us up when doubt is near."></div>
+      <div class="balloon" data-message="A teacher’s gift can never fade..."></div>
+      <div class="balloon" data-message="For futures strong are what they’ve made."></div>
     </div>
 
-    <div class="quote-box" id="quoteBox">Pop a balloon to reveal a poem line 🎈</div>
-
-    <div class="poem" id="poemBox" style="display:none;">
+    <!-- Poem -->
+    <div class="poem">
       <h2>🌸 A Poem for Teachers 🌸</h2>
       <p class="chalk-line" style="--n:39">A teacher’s wisdom lights the way,</p>
       <p class="chalk-line" style="--n:41">Guiding us brighter day by day.</p>
@@ -37,7 +37,6 @@
     </div>
   </div>
 
-  <canvas id="confetti"></canvas>
   <script src="script.js"></script>
 </body>
 </html>
